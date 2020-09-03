@@ -83,7 +83,7 @@ section {
   height: 100vh;
 }
 
-.home-link {
+.contact-link {
   background-color: #ff4757;
   padding: 7px 10px 7px 10px;
   border-radius: 30px;
@@ -134,7 +134,7 @@ section {
   color: white;
   text-decoration: none;
 }
-.second-home {
+.second-contact {
   background-color: #f0626e;
 }
 
