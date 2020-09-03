@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.cover-img {
+  height: 100%;
+  opacity: 0.9;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cover-text {
+  color: rgb(255, 255, 255);
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-name {
+  color: #ff4757;
+}
+
+.cover-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  animation: animate 3.5s ease-in-out;
+  width: 120px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-button:hover {
+  background-color: #ff4757;
+  transition: 0.3s ease;
+}
+
+.cover-button a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+
+.cover-info {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 20%;
+  right: 5%;
+}
+
+.covering-button {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover-info {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cover-info {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65%;
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
